@@ -31,11 +31,12 @@ The project in development is a personal portfolio website, which has the main o
 - Design and implement a visually appealing and user-friendly website layout.
 - Include sections for an “about me”, skills, projects, and contact information.
 - Display your projects with brief descriptions, images, and links to live demos or source code repositories.
+
 ![Alt text](<./flowchart/Blank diagram.png>)
 
 
 ## Design of the prototype
-Here is a link to the [Figma](https://www.figma.com/file/degb8Pjc4Q2NQ8QSAvukwX/Portfolio-design?type=design&node-id=0%3A1&mode=design&t=l7Ad2cBSpnmkC3EG-1)
+Here is a link to the [Figma](https://www.figma.com/file/degb8Pjc4Q2NQ8QSAvukwX/Portfolio-design?type=design&node-id=0%3A1&mode=design&t=l7Ad2cBSpnmkC3EG-1) file which shows the design of the expected portfolio website
 
 
 ## Roadmap and future enhancements
