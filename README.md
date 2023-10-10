@@ -4,12 +4,12 @@ The main objectives are:
 - An overview about myself
 - My projects and a description of the functionality of the projects
 - The skills that I have learnt throughout the ALX journey
-- Contact informatio 
+- Contact information
 
 ## Features and Functionality
 
 - [About](#about)
-- [Projects](#projects) - software development and UI/UX projects
+- [Projects](#projects)
 - [Skills](#skills)
 - [Getting Started](#getting_started)
 - [Installing](#installing)
@@ -19,17 +19,19 @@ The main objectives are:
 ## Technologies used
 - HTML
 - CSS
+- JavaScript
 - Python
 - Flask
 - MySQL
 - API
 - Git
 
-## Project Workflow
+## Project Workflow & flowchart
 The project in development is a personal portfolio website, which has the main objectives:
 - Design and implement a visually appealing and user-friendly website layout.
 - Include sections for an “about me”, skills, projects, and contact information.
 - Display your projects with brief descriptions, images, and links to live demos or source code repositories.
+![Alt text](<Blank diagram.png>)
 
 
 ## Design of the prototype
