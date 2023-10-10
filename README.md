@@ -31,7 +31,7 @@ The project in development is a personal portfolio website, which has the main o
 - Design and implement a visually appealing and user-friendly website layout.
 - Include sections for an “about me”, skills, projects, and contact information.
 - Display your projects with brief descriptions, images, and links to live demos or source code repositories.
-![Alt text](<Blank diagram.png>)
+![Alt text](<./flowchart/Blank diagram.png>)
 
 
 ## Design of the prototype
