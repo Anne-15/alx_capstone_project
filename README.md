@@ -35,7 +35,7 @@ The project in development is a personal portfolio website, which has the main o
 
 
 ## Design of the prototype
-Here is a link to the figma file - https://www.figma.com/file/degb8Pjc4Q2NQ8QSAvukwX/Portfolio-design?type=design&node-id=0%3A1&mode=design&t=l7Ad2cBSpnmkC3EG-1
+Here is a link to the [Figma](https://www.figma.com/file/degb8Pjc4Q2NQ8QSAvukwX/Portfolio-design?type=design&node-id=0%3A1&mode=design&t=l7Ad2cBSpnmkC3EG-1)
 
 
 ## Roadmap and future enhancements
