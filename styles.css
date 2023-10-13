@@ -204,10 +204,16 @@ button:hover, button:active{
     justify-content: space-around;
     margin-left: 150px;
     margin-right: 150px;
+    /* flex-direction: column; */
 }
 
 .card-skills{
+    background-color: rgba(20, 20, 42, 0.4);
     margin: 2%;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 25px;
 }
 
 .circle-skills{
@@ -221,7 +227,6 @@ button:hover, button:active{
     color: white;
     font-size: 16px;
     font-weight: bold;
-    margin-left: 90px;
 }
 
 @media(max-width: 768px) {
