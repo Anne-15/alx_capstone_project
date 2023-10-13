@@ -190,6 +190,40 @@ button:hover, button:active{
     margin-left: 90px;
 }
 
+#skills{
+    color: #fff;
+}
+
+#skills h1{
+    padding: 10px;
+    text-align: center;
+}
+
+.skill-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.card-skills{
+    margin: 2%;
+}
+
+.circle-skills{
+    width: 50px;
+    height: 50px;
+    background-color: #823446;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 90px;
+}
+
 @media(max-width: 768px) {
     .menu-display {
         justify-content: space-around;
