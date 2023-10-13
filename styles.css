@@ -91,10 +91,92 @@ button:hover, button:active{
 
 #projects{
     width: auto;
-    background-color: #fff;
+    /* background-color: #fff; */
+    text-align: center;
+    color: #fff;
+}
+
+#projects h1{
+    padding: 10px;
+}
+
+.card-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.cards{
+    margin: 5%;
     text-align: center;
 }
 
+#about{
+    width: auto;
+    /* background-color: #fff; */
+    text-align: center;
+    color: #fff;
+}
+
+#about h1{
+    padding: 15px;
+}
+
+.about-section{
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-words{
+    width: 500px;
+    margin-left: 100px;
+}
+
+.about-image img{
+    width: 300px;
+    height: 410px;
+    margin-right: 190px;
+}
+
+#experience{
+    color: #fff;
+}
+
+#experience h1{
+    padding: 10px;
+    text-align: center;
+}
+
+.experiences{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 150px;
+    margin-right: 150px;
+    
+}
+
+.card-exp{
+    margin: 2%;
+}
+
+.circle {
+    width: 90px;
+    height: 90px;
+    background-color: #DB9199;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 90px;
+}
 
 @media(max-width: 768px) {
     .menu-display {
@@ -119,6 +201,31 @@ button:hover, button:active{
     }
     .hero-image{
         margin-left: 70px;
+    }
+    .card-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .about-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0%;
+    }
+    .about-words{
+        margin-left: 10px;
+    }
+    
+    .about-image img{
+        width: 220px;
+        height: 310px;
+        margin-right: 0%;
+    }
+    .experiences{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -154,5 +261,14 @@ button:hover, button:active{
     }
     .hero-image{
         margin-left: 70px;
+    }
+    .card-box{
+        flex-wrap: wrap;
+    }
+    .about-section{
+        flex-wrap: wrap;
+    }
+    .experiences{
+        flex-wrap: wrap;
     }
 }
