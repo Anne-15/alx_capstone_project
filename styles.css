@@ -157,6 +157,7 @@ button:hover, button:active{
 
 #experience{
     color: #fff;
+    margin-top: 50px;
 }
 
 #experience h1{
@@ -192,6 +193,7 @@ button:hover, button:active{
 
 #skills{
     color: #fff;
+    margin-top: 50px;
 }
 
 #skills h1{
@@ -229,6 +231,52 @@ button:hover, button:active{
     font-weight: bold;
 }
 
+#contact{
+    color: #fff;
+    margin-top: 50px;
+    
+}
+
+#contact h1{
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px; /* Adjust the maximum width as needed */
+    margin: auto;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #DB9199; /* Add a bottom border to input elements */
+    background-color: transparent; /* Make the background transparent */
+}
+
+button {
+    background-color: #DB9199; /* Green background color */
+    color: white; /* White text color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #823446; /* Darker green on hover */
+}
+
+
 @media(max-width: 768px) {
     .menu-display {
         justify-content: space-around;
@@ -244,6 +292,7 @@ button:hover, button:active{
         margin-right: 20px;
     }
     .hero{
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -278,6 +327,11 @@ button:hover, button:active{
         flex-wrap: wrap;
         justify-content: center;
     }
+    .skill-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 @media(max-width: 480px) {
@@ -304,6 +358,7 @@ button:hover, button:active{
         margin-right: 20px;
     }
     .hero{
+        margin-top: 40px;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -320,6 +375,9 @@ button:hover, button:active{
         flex-wrap: wrap;
     }
     .experiences{
+        flex-wrap: wrap;
+    }
+    .skill-cards{
         flex-wrap: wrap;
     }
 }
