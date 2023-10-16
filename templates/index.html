@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='./styles.css')}}">
+    <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <title>My Portfolio</title>
+</head>
+<body>
+    <main>
+        <section id="header-section">
+            <header>
+                <div class="nav-menu">
+                    <div class="logo">
+                        <a href="/"><p style="font-family: 'Lily Script One', cursive;">Riishi</p></a>
+                    </div>
+                    <div class="menu-display">
+                        <nav class="nav">
+                            <ul class="navigation">
+                                <a href="#projects"><li>Projects</li></a>
+                                <a href="#about"><li>About</li></a>
+                                <a href="#experience"><li>Experience</li></a>
+                                <a href="#skills"><li>Skills</li></a>
+                                <a href="#contact"><li>Contact</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <div class="hero">
+                <div class="hero-image">
+                    <div>    
+                        <dotlottie-player src="https://lottie.host/fa89bcbb-691c-4013-bdf7-c8bcb1c2df01/1ANGrkBOaY.json" 
+                        background="transparent" speed="1" style="width: 450px; height: 450px;" loop autoplay></dotlottie-player>
+                    </div>
+                </div>
+                <div class="hero-sector">
+                    <p style="font-family: 'Lily Script One', cursive; font-size: 24px;">Hi, I am a Front-end Software Developer</p>
+                    <p>Explore my world in a few spaces. 
+                        Get to learn about my interests and skills as a 
+                        software engineer and designer
+                    </p>
+                    <button class="call-to-action" onclick="downloadResume()">Download CV</button>
+                </div>
+            </div>
+            
+        </section>
+        <!-- projects -->
+        <section id="projects">
+            <h1 style="font-size: 32px; font-weight: bold; color: #DB9199;">Projects</h1>
+            <div class="margin">
+                <h2>What I do...</h2>
+                <p>Look at some of the project I have done before...</p>
+            </div>
+            <div class="card-box">
+                <div class="cards">
+                    <a href="https://github.com/Anne-15/diabetes-app" target="_blank" class="card-link">
+                        <img src="{{url_for('static', filename='./images/project1.jpg')}}" alt="Project Image" class="card-image">
+                        <h3 class="text-big" style="font-size: 18px; font-weight: 600;">Diabetes Monitoring and Management Platform</h3>
+                        <p class="dark text-small" style="font-size: 14px;">
+                            This project is a mobile flutter application that is geared towards aiding diabetic patients to navigate life with the help of their specialists. <br>
+                        </p>
+                        <p class="dark text-small" style="font-size: 14px;">Stack: Flutter, Dart, Firebase</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="https://github.com/Anne-15/APDS-OLB" target="_blank" class="card-link">
+                        <img src="{{url_for('static', filename='./images/project2.jpg')}}" alt="Project Image" class="card-image">
+                        <h3 class="text-big" style="font-size: 18px; font-weight: 600;">APDS-OLB</h3>
+                        <p class="dark text-small" style="font-size: 14px;">A react JS front end application for a delivery app that 
+                            allows business owners to create products and make order deliveries across different customers at the same time to save on the delivery costs
+                        </p>
+                        <p class="dark text-small" style="font-size: 14px;">Stack: HTML, CSS, JavaScript (REACTJS)</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="https://github.com/Anne-15/api" target="_blank" class="card-link">
+                        <img src="{{url_for('static', filename='./images/project3.jpg')}}" alt="Project Image" class="card-image">
+                        <h3 class="text-big" style="font-size: 18px; font-weight: 600;">API Project</h3>
+                        <p class="dark text-small" style="font-size: 14px;">A backend REST API that handles requests from the database and connects to a front end react JS project (APDS-OLB).</p>
+                        <p class="dark text-small" style="font-size: 14px;">Stack: NodeJs, TypeScript, express, TypeORM, Postgres</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="https://github.com/Anne-15/drive-smart" target="_blank" class="card-link">
+                        <img src="{{url_for('static', filename='./images/project4.jpg')}}" alt="Project Image" class="card-image">
+                        <h3 class="text-big" style="font-size: 18px; font-weight: 600;">Drive Smart</h3>
+                        <p class="dark text-small" style="font-size: 14px;">A model built with tensorflow to predict the expected time travel of a delivery system</p>
+                        <p class="dark text-small" style="font-size: 14px;">Stack: Python, Flask</p>
+                    </a> 
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section id="about">
+            <h1 style="font-size: 32px; font-weight: bold; color: #DB9199;">About Me</h1>
+            <div class="about-margin">
+                <p>Learn more about me, my strengths, weaknesses and interests</p>
+            </div>
+            <div class="about-section">
+                <div class="about-words">
+                    <h3>Introduction</h3>
+                    <p>
+                        My name is Anne Wariiyu Nduati, a young energetic and smart youth with a warm & welcoming heart, empathetic and emotional being.
+                        <br>
+                        I am very articulate with my thoughts and actions. I have to  double check my work because we can be petty with design, accurate data
+                        and well formatted spaces.
+                    </p>
+                    <h3>Strengths</h3>
+                    <p>Some of my strengths are:</p>
+                    <ul>
+                        <li>Creative in design spaces and beyond</li>
+                        <li>I think ahead of the 'game'. I consider future occurrences of events to analyse a situation properly</li>
+                        <li>Strategic with my decision making and planning.</li>
+                    </ul>
+                    <h3>Weaknesses</h3>
+                    <p>Some of my weaknesses are:</p>
+                    <ul>
+                        <li>Being a perfectionist at heart. Slows down some of my processes cause not everything can be at 100%</li>
+                        <li>Timid, when it comes to being in spaces</li>
+                        <li>Communication skills, I lack in some communication skills especially in public spaces</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="{{url_for('static', filename='./images/profile.jpg')}}" alt="Project Image">
+                </div>
+            </div>
+        </section>
+        <!-- experience -->
+        <section id="experience">
+            <h1 style="font-size: 32px; font-weight: bold; color: #DB9199;">Experiences</h1>
+            <div class="experiences">
+                <div class="card-exp">  
+                    <div class="circle">1</div> <br>
+                    <h3>SOFTWARE TEST ENGINEER I, TECHNO BRAIN GROUP</h3>
+                    <h4>[June 2022 - April 2023]</h4>
+                    <p>
+                        Triaged daily customer feedback and collaborated with Microsoft to understand customer needs. <br>
+                        Generated comprehensive daily, monthly, and quarterly review reports. <br>
+                        Created visually appealing Power BI dashboard reports for data presentation. <br>  
+                        Leveraged automation using Microsoft tools to streamline triaging processes. <br>
+                    </p> <br>
+                    <h4>Skills: critical thinking, power bi, data analysis, powerpoint presentation, Automation</h4>
+                </div>
+                <div class="card-exp">  
+                    <div class="circle">2</div> <br>
+                    <h3>STUDENT MENTOR, TECHNOVATION SUMMER SCHOOL FOR GIRLS </h3>
+                    <h4>[February 2022 - July 2022]</h4>
+                    <p>Mentored primary school children in building programs and applications using the latest technologies.</p> <br>
+                    <h4>Skills: mentorship </h4>
+                </div>
+                <div class="card-exp">  
+                    <div class="circle">3</div> <br>
+                    <h3>YOUTH LEADER, AIESEC IN UNIVERSITY OF NAIROBI</h3>
+                    <h4>[February 2019 - January 2022]</h4>
+                    <p>
+                        Managed cash inflows and receipts (2019-2020).  <br>
+                        Created a membership database, conducted engagement surveys, and implemented a rewards and recognition framework for growth and development (2020-2021). <br>  
+                        Managed organisation accounts as Vice President of Finance (2021-2022). <br>
+                    </p> <br>
+                    <h4>Skills: leadership, team management, event management, finance, talent management</h4>
+                </div>
+            </div>
+        </section>
+        <!-- skills -->
+        <section id="skills">
+            <h1 style="font-size: 32px; font-weight: bold; color: #DB9199;">Skills and Hobbies</h1>
+            <div class="skill-cards">
+                <div class="card-skills">  
+                    <div class="circle-skills">1</div> <br>
+                    <h3>Tech:</h3>
+                    <p>HTML, CSS, JavaScript, NodeJS, ReactJS, TypeScript</p>
+                </div>
+                <div class="card-skills">  
+                    <div class="circle-skills">2</div> <br>
+                    <h3>Social Skills:</h3>
+                    <p>Communication, Leadership, Mentorship, Fast-learner</p>
+                </div>
+                <div class="card-skills">  
+                    <div class="circle-skills">3</div> <br>
+                    <h3>Hobbies:</h3>
+                    <p>Pencil drawing (art), reading/listenig to novels, Coloring/painting(art)</p>
+                </div>
+            </div>
+        </section>
+        <!-- education -->
+        <section id="contact">
+            <h1 style="font-size: 32px; font-weight: bold; color: #DB9199;">Contact Me</h1>
+            <form action="/" method="post">
+                Name: <input type="text" name="name">
+                Email: <input type="text" name="email">
+                Subject: <input type="text" name="subject">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button>Reach out</button>
+            </form>
+        </section>
+    </main>
+    <footer id="contact-info">
+        <div class="footer">
+            <div class="logo">
+                <p style="font-family: 'Lily Script One', cursive;">Riishi</p>
+            </div>
+            <div class="social-media">
+                <nav class="footer-nav">
+                    <ul class="nav-footer">
+                        <a href="https://www.instagram.com/a_wariiyu/">
+                            <li><img class="social-icon" src="{{url_for('static', filename='./images/instagram.png')}}" alt="instagram"></li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anne-nduati-63973a190/">
+                            <li><img class="social-icon" src="{{url_for('static', filename='./images/linkedin.png')}}" alt="linkedln"></li>
+                        </a>
+                        <a href="#">
+                            <li><img class="social-icon" src="{{url_for('static', filename='./images/mail.png')}}" alt="gmail"></li>
+                        </a>
+                        <a href="https://github.com/Anne-15">
+                            <li><img class="social-icon" src="{{url_for('static', filename='./images/github.png')}}" alt="github"></li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="{{url_for('static', filename='./script.js')}}"></script>
+</body>
+</html>
