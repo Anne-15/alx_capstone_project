@@ -17,6 +17,7 @@ header {
     /* font-weight: bold; */
     font-size: 32px;
     margin-left: 100px;
+    /* margin-bottom: 10px; */
 }
 
 .logo a{
@@ -353,7 +354,7 @@ footer .logo{
 }
 
 .footer-nav li{
-    margin-top: 10px;
+    margin-top: 30px;
     padding: 20px;
     font-size: 18px;   
 }
@@ -364,15 +365,15 @@ footer .logo{
 }
 
 .social-icon{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     /* color: #DB9199;
     fill: #DB9199; */
     filter: hue-rotate (90deg);;
     /* transition: filter 0.3s ease; */
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 992px) {
     .menu-display {
         justify-content: space-around;
         margin-right: 10px;
@@ -429,7 +430,7 @@ footer .logo{
     }
 }
 
-@media(max-width: 480px) {
+@media screen and (max-width: 600px) {
     .menu-display {
         flex-flow: column wrap;
         padding: 0;
