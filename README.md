@@ -32,7 +32,7 @@ The project in development is a personal portfolio website, which has the main o
 - Include sections for an “about me”, skills, projects, and contact information.
 - Display your projects with brief descriptions, images, and links to live demos or source code repositories.
 
-![Alt text](<./flowchart/Blank diagram.png>)
+![Alt text](<./static/flowchart/Blank diagram.png>)
 
 
 ## Design of the prototype
