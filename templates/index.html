@@ -18,6 +18,11 @@
                         <a href="/"><p style="font-family: 'Lily Script One', cursive;">Riishi</p></a>
                     </div>
                     <div class="menu-display">
+                        <div class="nav-icon" id="nav-icon">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
                         <nav class="nav">
                             <ul class="navigation">
                                 <a href="#projects"><li>Projects</li></a>
@@ -58,12 +63,16 @@
             <div class="card-box">
                 <div class="cards">
                     <a href="https://github.com/Anne-15/diabetes-app" target="_blank" class="card-link">
-                        <img src="{{url_for('static', filename='./images/project1.jpg')}}" alt="Project Image" class="card-image">
-                        <h3 class="text-big" style="font-size: 18px; font-weight: 600;">Diabetes Monitoring and Management Platform</h3>
-                        <p class="dark text-small" style="font-size: 14px;">
-                            This project is a mobile flutter application that is geared towards aiding diabetic patients to navigate life with the help of their specialists. <br>
-                        </p>
-                        <p class="dark text-small" style="font-size: 14px;">Stack: Flutter, Dart, Firebase</p>
+                        <div class="card-content">
+                            <img src="{{url_for('static', filename='./images/project1.jpg')}}" alt="Project Image" class="card-image">
+                            <div class="text-content">
+                                <h3 class="text-big" style="font-size: 18px; font-weight: 600;">Diabetes Monitoring and Management Platform</h3>
+                                <p class="dark text-small" style="font-size: 14px;">
+                                    This project is a mobile Flutter application that is geared towards aiding diabetic patients to navigate life with the help of their specialists.
+                                </p>
+                                <p class="dark text-small" style="font-size: 14px;">Stack: Flutter, Dart, Firebase</p>
+                            </div>
+                        </div>
                     </a>
                 </div>
                 <div class="cards">

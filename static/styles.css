@@ -24,6 +24,15 @@ header {
     color: #DB9199;
 }
 
+.nav-icon {
+    cursor: pointer;
+    display: none; /* Hide by default on larger screens */
+}
+
+.nav {
+    display: flex;
+}
+
 .nav-menu{
     width: var(--max-width);
     height: inherit;
@@ -101,8 +110,6 @@ button:hover, button:active{
 }
 
 #projects{
-    width: auto;
-    /* text-align: center; */
     color: #fff;
     padding: 20px;
 }
@@ -122,13 +129,20 @@ button:hover, button:active{
 .card-box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-left: 150px;
     margin-right: 150px;
+    
 }
 
 .cards{
     margin: 5%;
+    /* width: 300px; */
+    /* margin: 20px; */
+    /* background-color: #333; Set your desired background color */
+    /* border-radius: 10px; */
+    /* overflow: hidden; */
+    transition: transform 0.3s ease;
 }
 
 .cards, img{
@@ -144,6 +158,7 @@ button:hover, button:active{
 
 .card-link:hover .card-image {
     opacity: 0.7;
+    transform: scale(1.05);
 }
 
 .card-link:hover h3 {
@@ -154,6 +169,8 @@ button:hover, button:active{
     width: 100%;
     border-radius: 8px;
     transition: opacity 0.3s ease;
+    /* height: auto; */
+    /* border-radius: 10px 10px 0 0; */
 }
 
 .text-big {
@@ -248,7 +265,6 @@ button:hover, button:active{
     justify-content: space-around;
     margin-left: 150px;
     margin-right: 150px;
-    /* flex-direction: column; */
 }
 
 .card-skills{
@@ -369,18 +385,41 @@ footer .logo{
     height: 30px;
     /* color: #DB9199;
     fill: #DB9199; */
-    filter: hue-rotate (90deg);;
     /* transition: filter 0.3s ease; */
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .menu-display {
-        justify-content: space-around;
-        margin-right: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-icon {
+        display: block;
+        padding: 10px;
+    }
+
+    .nav {
+        display: none; /* Hide by default on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 80px; /* Adjust as needed */
+        right: 0;
+        background-color: #333; /* Adjust as needed */
+        width: 100%;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav li {
+        padding: 10px;
         text-align: center;
     }
     .logo {
-        font-weight: bold;
+        /* font-weight: bold; */
         font-size: 20px;
         /* color: #DB9199; */
         margin-top: 10px;
@@ -398,10 +437,20 @@ footer .logo{
     .hero-image{
         margin-left: 70px;
     }
-    .card-box{
+    .card-box {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        margin-top: 20px;
+        /* width: calc(50% - 40px); Two cards in a row with some margin */
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        /* margin-top: 100px;
+        margin-bottom: 100px; */
+        overflow: hidden;
+        align-items: center;
     }
     .about-section{
         display: flex;
@@ -430,7 +479,7 @@ footer .logo{
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .menu-display {
         flex-flow: column wrap;
         padding: 0;
@@ -464,8 +513,9 @@ footer .logo{
     .hero-image{
         margin-left: 70px;
     }
-    .card-box{
+    .cards {
         flex-wrap: wrap;
+        /* width: calc(100% - 40px); Single column layout with some margin */
     }
     .about-section{
         flex-wrap: wrap;

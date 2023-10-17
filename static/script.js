@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const navIcon = document.getElementById('nav-icon');
+    const nav = document.querySelector('.nav');
+
+    navIcon.addEventListener('click', function () {
+        nav.classList.toggle('show');
+    });
+});
+
 function downloadResume(){
     var pdfDocument = 'ANNE WARIIYU NDUATI RESUME.pdf';
     var link = document.createElement('a')
