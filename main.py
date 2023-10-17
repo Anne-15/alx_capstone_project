@@ -5,7 +5,6 @@ from flask_mail import Mail
 
 app = Flask(__name__)
 
-
 gmail_user = os.getenv('gmail_user')
 gmail_password = os.getenv('gmail_password')
 
@@ -35,11 +34,9 @@ def contact():
         print("Subject:", subject)
         print("Message:", message)
 
-        recipient = ['portfolio624@gmail.com']
-
         mail.send_message("Message from " + name + " at " + email,
                         sender = email,
-                        recipients = recipient,
+                        recipients = [gmail_user],
                         body = subject + "\n\n" + message
                         )
     

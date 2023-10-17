@@ -189,13 +189,14 @@
         <!-- education -->
         <section id="contact">
             <h1 style="font-size: 32px; font-weight: bold; color: #DB9199;">Contact Me</h1>
-            <form action="/" method="post">
-                Name: <input type="text" name="name">
-                Email: <input type="text" name="email">
-                Subject: <input type="text" name="subject">
+            <form action="/" method="post" id="submitForm">
+                Name: <input type="text" name="name" id="name">
+                Email: <input type="text" name="email" id="email">
+                Subject: <input type="text" name="subject" id="subject">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                <button>Reach out</button>
+                <textarea name="message" id="messages" cols="30" rows="10"></textarea>
+                <button type="submit">Reach out</button>
+                <p id="message"></p>
             </form>
         </section>
     </main>
