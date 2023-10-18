@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='./styles.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="{{url_for('static', filename='./images/portfolio.ico')}}" type="image/x-icon">
     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     <title>My Portfolio</title>
@@ -17,12 +18,7 @@
                     <div class="logo">
                         <a href="/"><p style="font-family: 'Lily Script One', cursive;">Riishi</p></a>
                     </div>
-                    <div class="menu-display">
-                        <div class="nav-icon" id="nav-icon">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
+                    <div class="menu-display" id="menu-display">
                         <nav class="nav">
                             <ul class="navigation">
                                 <a href="#projects"><li>Projects</li></a>
@@ -30,6 +26,9 @@
                                 <a href="#experience"><li>Experience</li></a>
                                 <a href="#skills"><li>Skills</li></a>
                                 <a href="#contact"><li>Contact</li></a>
+                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                    <i class="fa fa-bars"></i>
+                                </a>
                             </ul>
                         </nav>
                     </div>
@@ -175,7 +174,7 @@
                 </div>
                 <div class="card-exp">  
                     <div class="circle">3</div> <br>
-                    <h3>YOUTH LEADER, AIESEC IN UNIVERSITY OF NAIROBI</h3>
+                    <h3>YOUTH LEADER, AIESEC</h3>
                     <h4>[February 2019 - January 2022]</h4>
                     <p>
                         Managed cash inflows and receipts (2019-2020).  <br>

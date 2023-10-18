@@ -68,6 +68,11 @@ a{
     color: white; /* Add your desired text color */
 }
 
+/* Hide the link that should open and close the topnav on small screens */
+.menu-display .icon {
+    display: none;
+}
+
 .hero{
     margin-top: 100px;
     margin-left: 150px;
@@ -227,7 +232,7 @@ button:hover, button:active{
 
 .experiences{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 150px;
     margin-right: 150px;
 }
@@ -389,34 +394,32 @@ footer .logo{
 }
 
 @media screen and (max-width: 768px) {
+    .menu-display a:not(:first-child) {display: none;}
+    .menu-display a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-display.responsive {position: relative;}
+    .menu-display.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu-display.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .menu-display {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-
-    .nav-icon {
-        display: block;
-        padding: 10px;
-    }
-
-    .nav {
-        display: none; /* Hide by default on smaller screens */
-        flex-direction: column;
-        position: absolute;
-        top: 80px; /* Adjust as needed */
-        right: 0;
-        background-color: #333; /* Adjust as needed */
-        width: 100%;
-    }
-
-    .nav.show {
-        display: flex;
-    }
-
-    .nav li {
-        padding: 10px;
-        text-align: center;
     }
     .logo {
         /* font-weight: bold; */
@@ -484,15 +487,6 @@ footer .logo{
         flex-flow: column wrap;
         padding: 0;
         margin-right: 30px;
-    }
-    .menu-display a { 
-        text-align: center; 
-        padding: 10px;
-        border-top: 1px solid rgba(255, 255, 255,0.3); 
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-    }
-    .menu-display li:last-of-type a {
-        border-bottom: none;
     }
     .logo {
         font-weight: bold;

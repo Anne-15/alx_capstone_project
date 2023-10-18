@@ -1,11 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const navIcon = document.getElementById('nav-icon');
-    const nav = document.querySelector('.nav');
-
-    navIcon.addEventListener('click', function () {
-        nav.classList.toggle('show');
-    });
-});
+function myFunction() {
+    var x = document.getElementById("menu-display");
+    if (x.className === "menu-display") {
+      x.className += " responsive";
+    } else {
+      x.className = "menu-display";
+    }
+  }
 
 function downloadResume(){
     var pdfDocument = 'ANNE WARIIYU NDUATI RESUME.pdf';
