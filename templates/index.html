@@ -47,7 +47,10 @@
                         Get to learn about my interests and skills as a 
                         software engineer and designer
                     </p>
-                    <button class="call-to-action" onclick="downloadResume()">Download CV</button>
+                    <a href="{{url_for('static', filename='./resume.pdf')}}" download="Resume.pdf">
+                        <button class="call-to-action">Download CV</button>
+                    </a>
+                    
                 </div>
             </div>
             

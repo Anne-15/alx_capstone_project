@@ -1,12 +1,3 @@
-function myFunction() {
-    var x = document.getElementById("menu-display");
-    if (x.className === "menu-display") {
-      x.className += " responsive";
-    } else {
-      x.className = "menu-display";
-    }
-  }
-
 function downloadResume(){
     var pdfDocument = 'ANNE WARIIYU NDUATI RESUME.pdf';
     var link = document.createElement('a')
