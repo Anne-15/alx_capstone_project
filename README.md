@@ -22,7 +22,6 @@ The main objectives are:
 - JavaScript
 - Python
 - Flask
-- MySQL
 - API
 - Git
 
